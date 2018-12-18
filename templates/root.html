@@ -6,9 +6,23 @@
 </head>
 <body>
   <h1>Home Page Optometrist</h1>
+  <p>Enter the URL for someone's homepage and it will be loaded with cool glasses put on their eyes</p>
   <form method="GET" action="{{ url_for('view_page') }}"> 
   	<input type="text" name="url" size="80" value="">
   	<input type="submit" value="Submit">
-  </form>
+  	<div><p>Select your favorite pair from the list below</p></div>
+  	<div>
+	  	<input type="radio" name="glasses" value="pixel" id="pixel" checked/>
+	  		<label for="pixel"><img src="static/PixelGlasses.png" width="100" height="50" /></label>
+	  	<input type="radio" name="glasses" value="ski" id="ski"/>
+	  		<label for="ski"><img src="static/ski.png" width="100" height="50" /></label>
+	  	<input type="radio" name="glasses" value="sun" id="sun"/>
+	  		<label for="sun"><img src="static/sunglasses.png" width="100" height="50" /></label>
+	  	<input type="radio" name="glasses" value="clout" id="clout"/>
+	  		<label for="clout"><img src="static/clout.png" width="100" height="50" /></label>
+	  	<input type="radio" name="glasses" value="mustache" id="mustache"/>
+	  		<label for="mustache"><img src="static/mustache.png" width="100" height="70" /></label>
+  	</div>
+  	</form>
 </body>
 </html>
